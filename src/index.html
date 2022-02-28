@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>List of Dungeons and Dragons Weapons and Classes</h1>
+  <p>Data source: <a href="https://api.open5e.com/"><code>https://api.open5e.com/</code></a></p>
+  
+  <h2>Please select a weapon type:</h2>
+
+  <select name="Select Weapon Type" id="input1">
+    <option value="Simple Melee Weapons">Simple Melee Weapons</option>
+    <option value="Simple Ranged Weapons">Simple Ranged Weapons</option>
+    <option value="Martial Melee Weapons">Martial Melee Weapons</option>
+    <option value="Martial Ranged Weapons">Martial Ranged Weapons</option>
+  </select>
+  <input id="btn1" type="button" value="Filter">
+  
+  <table id="WeaponsTable">
+    <!-- data will be generated from code -->
+    <tr>
+      <th>Weapon Name</th>
+      <th>Damage Dice</th>
+      <th>Damage Type</th>
+      <th>Properties</th>
+      <th>Weight</th>
+    </tr>
+  </table>
+
+  <h2>Please select a spellcasting ability:</h2>
+
+  <select name="Select Spellcasting Ability" id="input2">
+    <option value="">None</option>
+    <option value="Charisma">Charisma</option>
+    <option value="Intelligence">Intelligence</option>
+    <option value="Wisdom">Wisdom</option>
+  </select>
+  <input id="btn2" type="button" value="Filter">
+  
+  <table id="ClassTable">
+    <!-- data will be generated from code -->
+    <tr>
+      <th>Class Name</th>
+      <th>Hit Dice</th>
+      <th>Health at First Level</th>
+      <th>Saving Throw Proficiencies</th>
+      <th>Spellcasting Ability</th>
+    </tr>
+  </table>
+  <script src="main.ts" type="module"></script>
+</body>
+
+</html>
